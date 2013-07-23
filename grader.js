@@ -32,7 +32,7 @@ var rest = require('restler');
 var sys = require('util');
 var URL_DEFAULT = "http://thawing-eyrie-2235.herokuapp.com";
 
-var assertFileExists = function(infile) {
+var assertFileExists = function (infile) {
     var instr = infile.toString();
     if(!fs.existsSync(instr)) {
         console.log("%s does not exist. Exiting.", instr);
